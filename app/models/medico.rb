@@ -2,7 +2,7 @@ class Medico < ApplicationRecord
   has_many :consultums, dependent: :destroy
   has_many :pacientes, through: :consultums
 
-  validates :nome, presence: {message: 'Nome é obrigatório'},
+  validates :nomecompleto, presence: {message: 'Nome é obrigatório'},
             length: {maximum: 100, message:'maximo 100 caracteres'}
 
   validates :cpf, presence: {message: 'CPF obrigatório'},
