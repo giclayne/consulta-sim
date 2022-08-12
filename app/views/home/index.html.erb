@@ -1,7 +1,18 @@
-<h1>Consulta sim</h1>
-<p>
-  <%=link_to "Paciente",paciente_path %>
-  <%=link_to "Medicos",medicos_path %>
-  <%=link_to "Consultas",consulta_path %>
+<h1>CONSULTA SIM</h1>
 
-</p>
+<h3>Paciente</h3>
+<%=link_to 'Cadastrar', new_paciente_path %>
+</br>
+
+<%=link_to 'Listar', pacientes_path %>
+
+</br>
+<h3>Medicos</h3>
+<%=link_to 'Cadastrar', new_medico_path %>
+</br>
+<%=link_to 'Listar', medicos_path %>
+
+<h3>Consultas</h3>
+<%=link_to 'Cadastrar', new_consultum_path %>
+</br>
+<%=link_to 'Listar', consulta_path %>
