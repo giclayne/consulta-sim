@@ -2,6 +2,31 @@
 
 <%= render @medico %>
 
+<p>
+  <strong>Consultas Marcadas:</strong><br>
+<table>
+  <thead>
+  <tr border="1">
+    <th>Data</th>
+    <th>Horario</th>
+    <th>Paciente</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @medico.consultums.each do |consultum| %>
+    <tr>
+      <td><%= consultum.data %></td>
+      <td><%= consultum.horario %></td>
+      <td><%= consultum.paciente.nomecompleto %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+</p>
+
+
 <div>
   <%= link_to "Edit this medico", edit_medico_path(@medico) %> |
   <%= link_to "Back to medicos", medicos_path %>
