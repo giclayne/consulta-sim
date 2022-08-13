@@ -1,6 +1,23 @@
-<p style="color: green"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
-<%= render @consultum %>
+<p>
+  <strong>Data:</strong>
+  <%= @consultum.data %>
+</p>
+
+<p>
+  <strong>Horario:</strong>
+  <%= @consultum.horario.strftime("%H:%M") %>
+</p>
+
+  <strong>Medico:</strong>
+  <%= @consultum.medico.nomecompleto %>
+</p>
+
+<p>
+  <strong>Paciente:</strong>
+  <%= @consultum.paciente.nomecompleto %>
+</p>
 
 <div>
   <%= link_to "Edit this consultum", edit_consultum_path(@consultum) %> |
