@@ -1,4 +1,4 @@
-Feature:
+Feature: #retirei o nome da feature, porque estava dando erro
   As a medico que usa o sistema
   I want to criar, editar, remover e visualizar meu cadastro
   So that eu possa manter atualizada minhas informacoes cadastradas
